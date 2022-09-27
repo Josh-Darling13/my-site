@@ -107,7 +107,7 @@ main{
 }
 
 h1{ 
-  color: #ccc;
+  color: #222;
   line-height: .05em;
 }
 
@@ -123,16 +123,21 @@ a{
   text-decoration: none;
 }
 
+hr{
+  border-color: #121212;
+
+}
+
 .content-wrapper{
-  background-color: #ff0000; 
+  background-color: #38ff42;
   display: flex;
   flex-direction: column-reverse;
 }
 
 .dev-name{
-  border: #ccc solid 1px;
+  border: #222 solid 1px;
   border-radius: 10px;
-  color:#ccc;
+  color: #222;
   line-height: 1em;
   margin: 3em 15px 3em 15px;
   padding: 1em;
@@ -144,7 +149,7 @@ a{
 }
 
 .pad{
-  background-color: #ff0000;
+  background-color: #38ff42;
   height: 15px;
 }
 
@@ -206,7 +211,7 @@ section{
 }
 
 #from-contact{
-  color:#ccc;
+  color: #222;
 }
 
 article{
@@ -237,7 +242,7 @@ article{
 }
 
 .div-divide{
-  background-color: grey;
+  background-color: #121212;
   height: 1px;
   margin-top: 2em;
 }
@@ -251,7 +256,7 @@ article{
 
 button{
   color: #FFF;
-  background-color: #ff0000; 
+  background-color: #38ff42;
   border: none;
   border-radius: 10px;
   padding: 1em;
@@ -260,7 +265,8 @@ button{
 }
 
 .skill-set{
-  background-color: #cddbfa;
+  background-color: #38ff42;
+  border: #121212 solid 1px;
   border-radius: 10px;
   color: #121212; 
   padding: .25em;
@@ -269,7 +275,7 @@ button{
 .mad-skills p{
   background-color: #fff;
   border-radius: 10px;
-  color: #ff0000;
+  color: #121212;;
   padding: 15px 0;
   margin: 20px 0;
   text-align: center;
@@ -311,7 +317,7 @@ button{
 }
 
 .footer{
-  background-color: #ff0000;
+  background-color: #38ff42;
 }
 
 .content-wrapper{
@@ -323,8 +329,8 @@ button{
 }
 
 .contact{
-  color:#ccc;
-  border: #ccc solid 1px;
+  color: #222;
+  border: #121212 solid 1px;
   border-radius: 10px;
   margin: 3em 0px 3em 0px;
   padding: 3em;
@@ -332,34 +338,34 @@ button{
 }
 
 .social{
-  color:#ccc;
+  color: #222;
   text-align: center;
 }
 
 #place-phone a:link{
-  color:#ccc;
+  color: #222;
 }
 
 .socialist a{
-  color:#ccc;
+  color: #222;
   text-align: center;
 }
 
 .social-icons{
-  color:#ccc;
+  color: #222;
 }
 
 .socialist {
-  background-color: #ff0000;
-  color: #ccc;
+  background-color: #38ff42;
+  color: #222;
 }
 
 #con-header{
-  color:#ccc;
+  color: #222;
 }
 
 #place-phone{
-  color:#ccc;
+  color: #222;
 }
 
 .copyright a{
@@ -547,7 +553,7 @@ button{
     /*Desktop styles here*/
 
       h1{ 
-        color: #ccc;
+        color: #222;
         font-size: 3em;
         line-height: .05em;
       }
