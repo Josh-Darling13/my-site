@@ -254,8 +254,8 @@ article{
   padding: 1em;
 }
 
-button{
-  color: #FFF;
+.link-project{
+  color: #121212;
   background-color: #38ff42;
   border: none;
   border-radius: 10px;
