@@ -95,6 +95,12 @@ body{
   font-family: 'Roboto', sans-serif;
   font-family: 'Roboto Mono', monospace;
 
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+
 }
 
 header{
@@ -103,7 +109,7 @@ header{
 }
 
 main{
-  background-color: e6faff;
+  background-color: #e6faff;
 }
 
 h1{ 
@@ -140,8 +146,15 @@ hr{
   color: #222;
   line-height: 1em;
   margin: 3em 15px 3em 15px;
-  padding: 1em;
+  padding: .5em;
   text-align: center;
+}
+
+.dev-accent{
+  font-family: Montserrat;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: bold;
 }
 
 #accent{
@@ -221,6 +234,10 @@ article{
 
 .project-descript{
   padding: .5em;
+  font-family: Montserrat;
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .project-img{
@@ -275,10 +292,13 @@ article{
 .mad-skills p{
   background-color: #fff;
   border-radius: 10px;
-  color: #121212;;
   padding: 15px 0;
   margin: 20px 0;
   text-align: center;
+  font-family: Montserrat;
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .tech-stack{
@@ -301,12 +321,16 @@ article{
 }
 
 .info-container{
-  margin: 2em, 0em;
+  margin: 2em 0em 2em 0em;
 }
 
 .bio{
   display: inline-block;
   text-align: left;
+  font-family: Montserrat;
+  color: #000;
+  font-size: 1em;
+  font-weight: bold;
 }
 
 #headshot-sized{
@@ -321,7 +345,7 @@ article{
 }
 
 .content-wrapper{
-  margin: 3em, 3em, 3em 3em;
+  margin: 3em;
 }
 
 .footer-content{
@@ -332,8 +356,8 @@ article{
   color: #222;
   border: #121212 solid 1px;
   border-radius: 10px;
-  margin: 3em 0px 3em 0px;
-  padding: 3em;
+  margin: 2.5em 0px 2.5em 0px;
+
   text-align: center;
 }
 
@@ -500,9 +524,16 @@ article{
         padding-right: 3em;
       }
 
-      .bio-words{
-        font-size: 2em;
+
+      .bio{
+        display: inline-block;
+        text-align: left;
+        font-family: Montserrat;
+        color: #000;
+        font-size: 1em;
+        font-weight: bold;
       }
+      
 
       .skills{
         border: #999 solid 1px;
@@ -543,6 +574,14 @@ article{
         display: contents;
       }
 
+
+      #headshot-sized{
+        border-radius: 10px;
+        float: right;
+        height: 30%;
+        width: 30%;
+      }
+
       .last-from-projects{
         margin-top: 3em;
         padding: 3em;
@@ -564,7 +603,7 @@ article{
       }
       
       h3{
-        font-size: 2.5;
+        font-size: 2.5em;
         text-decoration: none;
       }
     
@@ -660,12 +699,22 @@ article{
         display: flex;
         flex-direction: column;
       }
-      
-      /*
-      #about-div{
-        display: contents;
+
+      .bio{
+        display: inline-block;
+        text-align: left;
+        font-family: Montserrat;
+        color: #000;
+        font-size: 2em;
+        font-weight: bold;
       }
-      */
+      
+      #headshot-sized{
+        border-radius: 10px;
+        float: right;
+        height: 30%;
+        width: 30%;
+      }
       
       #about-header{
         width: 100%;  
@@ -686,8 +735,8 @@ article{
       #headshot-sized{
         border-radius: 10px;
         float: right;
-        width: 55%;
-        height: 55%;
+        width: 30%;
+        height: 30%;
         margin: 1em;
       }
   }
