@@ -108,9 +108,6 @@ header{
   flex-direction: column;
 }
 
-main{
-  background-color: #e6faff;
-}
 
 h1{ 
   color: #222;
@@ -138,6 +135,7 @@ hr{
   background-color: #38ff42;
   display: flex;
   flex-direction: column-reverse;
+
 }
 
 .dev-name{
@@ -145,9 +143,10 @@ hr{
   border-radius: 10px;
   color: #222;
   line-height: 1em;
-  margin: 3em 15px 3em 15px;
+  margin: 3em 15px;
   padding: .5em;
   text-align: center;
+
 }
 
 .dev-accent{
@@ -289,6 +288,15 @@ article{
   padding: .25em;
 }
 
+.pub-set{
+
+  background-color: #38ff42;
+  border: #121212 solid 1px;
+  border-radius: 10px;
+  color: #121212; 
+  padding: 1em;
+}
+
 .mad-skills p{
   background-color: #fff;
   border-radius: 10px;
@@ -300,6 +308,19 @@ article{
   font-size: 1.25rem;
   font-weight: bold;
 }
+
+.pub-skills p{
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 20px 0;
+  text-align: left;
+  font-family: Montserrat;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 
 .tech-stack{
   margin-top: 3em;
@@ -539,19 +560,30 @@ article{
         border: #999 solid 1px;
         border-radius: 15px;
         box-shadow: 8px 8px 3px grey;
-        margin: 2em;
-        padding-right: 3em;
-        padding-bottom: 2em;
+        margin: 1em;
+        padding-right: 3rem;
+        padding-bottom: 2rem;
         display: flex;
         justify-content: space-around;
       }
 
       .skill-size{
-        width: 40%;
+        width: 45%;
       }
 
       .skill-set{
         width: 100%;
+        box-shadow: 8px 8px 3px grey;
+      }
+
+      .pub-set{
+        width: 90%;
+        box-shadow: 8px 8px 3px grey;
+        padding: 1em;
+      }
+
+      .pub-size{
+        width: 90%;
       }
 
       #mid-skills{
@@ -565,6 +597,8 @@ article{
       #skill-div{
         display: none;
       }
+
+      
 
       #about-header{
         margin-bottom: 3em;
@@ -677,15 +711,30 @@ article{
         border: #999 solid 1px;
         border-radius: 15px;
         box-shadow: 8px 8px 3px grey;
-        margin: 2em;
-        padding-right: 3em;
-        padding-bottom: 2em;
+        margin: 1em;
+        padding-right: 3rem;
+        padding-bottom: 2rem;
         display: flex;
         justify-content: space-around;
       }
 
       .skill-size{
-        width: 35%;
+        width: 45%;
+      }
+
+      .skill-set{
+        width: 100%;
+        box-shadow: 8px 8px 3px grey;
+      }
+
+      .pub-set{
+        width: 90%;
+        box-shadow: 8px 8px 3px grey;
+        padding: 1em;
+      }
+
+      .pub-size{
+        width: 90%;
       }
 
       #skill-div{
