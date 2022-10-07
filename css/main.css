@@ -106,6 +106,8 @@ body{
 header{
   display: flex;
   flex-direction: column;
+
+  width: 100%;
 }
 
 
@@ -132,9 +134,13 @@ hr{
 }
 
 .content-wrapper{
+  width: 100%;
   background-color: #38ff42;
   display: flex;
   flex-direction: column-reverse;
+  justify-content: left;
+  margin:0px;
+
 
 }
 
@@ -339,6 +345,7 @@ article{
 
 #about-header{
   margin-bottom: 2em;
+
 }
 
 .info-container{
@@ -363,10 +370,6 @@ article{
 
 .footer{
   background-color: #38ff42;
-}
-
-.content-wrapper{
-  margin: 3em;
 }
 
 .footer-content{
