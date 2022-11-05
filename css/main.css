@@ -101,8 +101,10 @@ body{
   font-family: 'Roboto', sans-serif;
   font-family: 'Roboto Mono', monospace;
 
-  background-color: #faefeb;
-  background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+  /* background-color: #faefeb; */
+  background-color: #616161;
+  background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+
 
 }
 
@@ -143,14 +145,21 @@ hr{
   flex-direction: column-reverse;
   justify-content: left;
   margin:0px;
-  opacity: 80%;
+  opacity: 77%;
+  border-radius: 10px;
+  box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84);
+  -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84);
+  -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84);
 
 }
+
+
+
 
 .dev-name{
   border: #222 solid 1px;
   border-radius: 10px;
-  color: #222;
+  color: #000;
   line-height: 1em;
   margin: 3em 15px;
   padding: .5em;
@@ -169,14 +178,19 @@ hr{
   background-color: lightgreen;
 }
 
+/* opacity: 77%;
+background-color: whitesmoke;
+border-radius: 10px; */
+
 .pad{
-  background-color: #38ff42;
+  background-color: #FFF;
   height: 15px;
+  opacity: 50%;
 }
 
 .nav-list{
-  background-color: #FFF;
-  color: #222;
+  background-color: whitesmoke;
+  color: #000;
   display: flex;
   flex-direction: column;
   line-height: .15em;
