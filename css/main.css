@@ -101,6 +101,9 @@ body{
   font-family: 'Roboto', sans-serif;
   font-family: 'Roboto Mono', monospace;
 
+  background-color: #faefeb;
+  background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+
 }
 
 header{
@@ -111,12 +114,12 @@ header{
 }
 
 
-h1{ 
+h1{
   color: #222;
   line-height: .05em;
 }
 
-h2 p{ 
+h2 p{
   color: #121212;
 }
 
@@ -135,12 +138,12 @@ hr{
 
 .content-wrapper{
   width: 100%;
-  background-color: #38ff42;
+  background-color: whitesmoke;
   display: flex;
   flex-direction: column-reverse;
   justify-content: left;
   margin:0px;
-
+  opacity: 80%;
 
 }
 
@@ -207,9 +210,9 @@ main{
 li{
   text-decoration: none;
 }
-   
+
 section{
-  margin-top: 30px; 
+  margin-top: 30px;
   padding: 1em;
 }
 
@@ -290,7 +293,7 @@ article{
   background-color: #38ff42;
   border: #121212 solid 1px;
   border-radius: 10px;
-  color: #121212; 
+  color: #121212;
   padding: .25em;
 }
 
@@ -299,7 +302,7 @@ article{
   background-color: #38ff42;
   border: #121212 solid 1px;
   border-radius: 10px;
-  color: #121212; 
+  color: #121212;
   padding: 1em;
 }
 
@@ -373,7 +376,7 @@ article{
 }
 
 .footer-content{
-  margin: 2em; 
+  margin: 2em;
 }
 
 .contact{
@@ -511,10 +514,22 @@ article{
    Modify as content requires.
    ========================================================================== */
 
+
+
+   @media only screen and (max-width:281px) {
+    /*Thin phones here*/
+
+    .nav-list{
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+
+
    @media only screen and (min-width:768px) {
     /*Tablet styles here*/
 
-      h2 p{ 
+      h2 p{
         font-size: 4em;
         color: #121212;
       }
@@ -539,7 +554,7 @@ article{
       .projects{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;     
+        justify-content: space-around;
       }
 
       .project-header{
@@ -557,7 +572,7 @@ article{
         font-size: 1em;
         font-weight: bold;
       }
-      
+
 
       .skills{
         border: #999 solid 1px;
@@ -601,7 +616,7 @@ article{
         display: none;
       }
 
-      
+
 
       #about-header{
         margin-bottom: 3em;
@@ -628,22 +643,22 @@ article{
    @media only screen and (min-width:1200px) {
     /*Desktop styles here*/
 
-      h1{ 
+      h1{
         color: #222;
         font-size: 3em;
         line-height: .05em;
       }
-      
-      h2 p{ 
+
+      h2 p{
         font-size: 3em;
         color: #121212;
       }
-      
+
       h3{
         font-size: 2.5em;
         text-decoration: none;
       }
-    
+
       .dev-name{
         margin-right: 3em;
         font-size: 1.5em;
@@ -658,10 +673,10 @@ article{
         display: none;
         justify-content: space-between;
       }
-  
+
       .link-list{
         font-size: 2em;
-      }      
+      }
 
       .last-from-projects{
         text-align: center;
@@ -685,7 +700,7 @@ article{
         margin-left: 5em;
         padding-right: 3em;
       }
-      
+
       .project{
         margin: 2em;
         padding: 3em;
@@ -694,7 +709,7 @@ article{
       .projects{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;     
+        justify-content: space-around;
       }
 
       #mid-skills{
@@ -708,7 +723,7 @@ article{
 
       #sk-size{
         padding-top: 1.5em;
-      } 
+      }
 
       .skills{
         border: #999 solid 1px;
@@ -742,7 +757,7 @@ article{
 
       #skill-div{
         height: 100%;
-        width: 1px;   
+        width: 1px;
       }
 
       .about{
@@ -760,30 +775,30 @@ article{
         font-size: 2em;
         font-weight: bold;
       }
-      
+
       #headshot-sized{
         border-radius: 10px;
         float: right;
         height: 30%;
         width: 30%;
       }
-      
+
       #about-header{
-        width: 100%;  
+        width: 100%;
       }
-    
+
       .info-container{
         padding: 3em;
         display: flex;
         justify-content: center;
       }
-      
+
       .me-stuff{
         width: 75%;
         height: 75%;
         align-content: center;
       }
-      
+
       #headshot-sized{
         border-radius: 10px;
         float: right;
