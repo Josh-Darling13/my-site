@@ -212,15 +212,6 @@ main{
   margin: 0px 15px 0px 15px;
 }
 
-/*
-background-color: whitesmoke;
-opacity: 77%;
-border-radius: 10px;
-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84);
--webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84);
--moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84);
-*/
-
 li{
   text-decoration: none;
 }
@@ -334,6 +325,15 @@ article{
   padding: 1em;
 }
 
+.skills{
+  background-color: whitesmoke;
+  border-radius: 10px;
+  opacity: 90%;
+  box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+  -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+  -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+}
+
 .mad-skills p{
   color: #FFF;
   background-color: #000;
@@ -400,7 +400,7 @@ article{
   text-align: left;
   font-family: Montserrat;
   color: #000;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: bold;
 }
 
@@ -564,10 +564,10 @@ article{
 
 
 
-   @media only screen and (max-width:281px) {
+   /* @media only screen and (min-width:281px) { */
     /*Thin phones here*/
 
-    .nav-list{
+    /* .nav-list{
       font-size: 12px;
       font-weight: bold;
     }
@@ -582,10 +582,13 @@ article{
       font-weight: bold;
     }
 
+    .bio{
+      font-size: 1em;
+      font-weight: bold;
+    } */
 
-
-   @media only screen and (min-width:768px) {
-    /*Tablet styles here*/
+   @media only screen and (min-width: 767px) and (orientation: portrait) { */
+    /*Tablet styles here */
 
       h2 p{
         font-size: 4em;
@@ -621,26 +624,31 @@ article{
         padding-right: 3em;
       }
 
-
       .bio{
         display: inline-block;
         text-align: left;
         font-family: Montserrat;
         color: #000;
-        font-size: 1em;
+        font-size: 3rem !important;
         font-weight: bold;
       }
 
+      .bio-words{
+        font-size: 3rem !important;
+      }
 
       .skills{
-        border: #999 solid 1px;
-        border-radius: 15px;
-        box-shadow: 8px 8px 3px grey;
         margin: 1em;
         padding-right: 3rem;
         padding-bottom: 2rem;
         display: flex;
         justify-content: space-around;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        opacity: 90%;
+        box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+        -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+        -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
       }
 
       .skill-size{
@@ -674,8 +682,6 @@ article{
         display: none;
       }
 
-
-
       #about-header{
         margin-bottom: 3em;
       }
@@ -683,7 +689,6 @@ article{
       #about-div{
         display: contents;
       }
-
 
       #headshot-sized{
         border-radius: 10px;
@@ -698,7 +703,7 @@ article{
       }
     }
 
-   @media only screen and (min-width:1200px) {
+   @media only screen and (min-width:1200px)and (orientation: landscape) {
     /*Desktop styles here*/
 
       h1{
