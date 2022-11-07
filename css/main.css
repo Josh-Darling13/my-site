@@ -216,6 +216,28 @@ li{
   text-decoration: none;
 }
 
+.title-box{
+  border: 1px solid #000;
+  width: fit-content;
+  /* margin-top: 15px;
+  margin-bottom: 10px; */
+  /* margin: 5%; */
+  /* padding: 5%; */
+
+  color: #FFF;
+  background-color: #000;
+
+  border-radius: 10px;
+  padding: 1em;
+  text-align: center;
+  opacity: 77%;
+  text-decoration: none;
+  box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
+  -webkit-box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
+  -moz-box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
+
+}
+
 section{
   margin-top: 30px;
   padding: 1em;
@@ -242,8 +264,8 @@ section{
 
 article{
   background-color: whitesmoke;
-  margin-bottom: 3em;
-  margin-top: 1.5em;
+  margin-bottom: 1em;
+  margin-top: 1em;
   border-radius: 10px;
   padding: 10px;
   opacity: 85%;
@@ -281,7 +303,7 @@ article{
   flex-direction: column-reverse;
 }
 
-.div-divide{
+.proj-divide{
   background-color: #121212;
   height: 1px;
   margin-top: 2em;
@@ -313,11 +335,11 @@ article{
   border: #121212 solid 1px;
   border-radius: 10px;
   color: #121212;
-  padding: .25em;
+  padding: 1em;
+
 }
 
 .pub-set{
-
   background-color: #38ff42;
   border: #121212 solid 1px;
   border-radius: 10px;
@@ -325,10 +347,11 @@ article{
   padding: 1em;
 }
 
-.skills{
+.skills-body{
   background-color: whitesmoke;
   border-radius: 10px;
   opacity: 90%;
+  padding: 1em;
   box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
   -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
   -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
@@ -339,7 +362,6 @@ article{
   background-color: #000;
   border-radius: 10px;
   padding: 15px 0;
-  margin: 20px 0;
   text-align: center;
   font-family: Montserrat;
   font-size: 1.25rem;
@@ -382,8 +404,11 @@ article{
   margin-bottom: 2em;
 }
 
+.me-stuff{
+  padding: .5em;
+}
+
 .info-container{
-  margin: 2em 0em 2em 0em;
   font-weight: bold;
   background-color: whitesmoke;
   margin-bottom: 3em;
@@ -398,6 +423,7 @@ article{
 .bio{
   display: inline-block;
   text-align: left;
+  vertical-align: text-top;
   font-family: Montserrat;
   color: #000;
   font-size: 1.2em;
@@ -405,6 +431,7 @@ article{
 }
 
 #headshot-sized{
+  margin-top: 20px;
   border-radius: 10px;
   float: right;
   height: 50%;
@@ -596,33 +623,36 @@ article{
       }
 
       article{
-        width: 42%;
         padding: 1em;
         display: flex;
         flex-direction: column;
       }
-
-      .project-header{
-        margin-top: 5em;
-        margin-left: 5em;
-        padding-right: 3em;
-      }
-
-      .project{
-        margin: 2em;
-      }
-
       .projects{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        display: grid;
+        column-gap: 10px;
+        display: grid;
+        grid-template-columns: auto auto;
+
       }
 
-      .project-header{
-        margin-top: 5em;
-        margin-left: 5em;
-        padding-right: 3em;
+      #first-box {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: fit-content;
       }
+
+      .skills-body{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        opacity: 90%;
+        box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+        -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+        -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+      }
+
 
       .bio{
         display: inline-block;
@@ -637,32 +667,10 @@ article{
         font-size: 3rem !important;
       }
 
-      .skills{
-        margin: 1em;
-        padding-right: 3rem;
-        padding-bottom: 2rem;
-        display: flex;
-        justify-content: space-around;
-        background-color: whitesmoke;
-        border-radius: 10px;
-        opacity: 90%;
-        box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
-        -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
-        -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
-      }
-
-      .skill-size{
-        width: 45%;
-      }
-
-      .skill-set{
-        width: 100%;
-        box-shadow: 8px 8px 3px grey;
-      }
 
       .pub-set{
         width: 90%;
-        box-shadow: 8px 8px 3px grey;
+
         padding: 1em;
       }
 
@@ -703,7 +711,7 @@ article{
       }
     }
 
-   @media only screen and (min-width:1200px)and (orientation: landscape) {
+   @media only screen and (min-width:1200px) {
     /*Desktop styles here*/
 
       h1{
@@ -732,9 +740,58 @@ article{
         flex-direction: column;
       }
 
+      .main{
+        display: grid;
+      }
+
+      article{
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+      }
+      .projects{
+        display: grid;
+        column-gap: 10px;
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: #2196F3;
+
+      }
+
+      #first-box {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: fit-content;
+      }
+
+
+/*
+      article{
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+      }
+      .projects{
+        display: grid;
+        column-gap: 10px;
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: #2196F3;
+      }
+
+      #first-box {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: fit-content;
+      } */
+
       .to-home{
         display: none;
         justify-content: space-between;
+      }
+
+      .proj-divide{
+        display: none;
       }
 
       .link-list{
@@ -751,17 +808,15 @@ article{
         justify-content: center;
       }
 
+
       article{
         width: 42%;
+        width: 100%;
         margin: .5em;
+        padding: 30px;
         display: flex;
         flex-direction: column;
-      }
-
-      .project-header{
-        margin-top: 5em;
-        margin-left: 5em;
-        padding-right: 3em;
+        justify-content: center;
       }
 
       .project{
@@ -779,19 +834,29 @@ article{
         display: none;
       }
 
-      .skill-set{
-        box-shadow: 8px 8px 3px grey;
+      /* .skill-set{
         width: 100%;
-      }
+      } */
 
-      #sk-size{
+      /* #sk-size{
         padding-top: 1.5em;
-      }
+      }  */
+
+      .skills-body{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        background-color: #2196F3;
+        /* background-color: whitesmoke; */
+      border-radius: 10px;
+      opacity: 90%;
+      box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+      -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+      -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+    }
 
       .skills{
         border: #999 solid 1px;
-        border-radius: 15px;
-        box-shadow: 8px 8px 3px grey;
         margin: 1em;
         padding-right: 3rem;
         padding-bottom: 2rem;
@@ -805,7 +870,7 @@ article{
 
       .skill-set{
         width: 100%;
-        box-shadow: 8px 8px 3px grey;
+        /* box-shadow: 8px 8px 3px grey; */
       }
 
       .pub-set{
