@@ -108,6 +108,8 @@ body{
 header{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-content: center;
   width: 100%;
   opacity: 80%;
 }
@@ -142,7 +144,8 @@ hr{
   background-color: whitesmoke;
   display: flex;
   flex-direction: column-reverse;
-  justify-content: left;
+  justify-content: center;
+  align-content: center;
   border-radius: 10px;
   box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84);
   -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84);
@@ -601,12 +604,12 @@ article{
       font-weight: bold;
     } */
 
-   @media only screen and (min-width: 767px) and (orientation: portrait) { */
+   @media only screen and (min-width: 767px) and (orientation: portrait) {
     /*Tablet styles here */
 
       h2 p{
         font-size: 4em;
-        color: #121212;
+        color: #000;
       }
 
       article{
@@ -617,14 +620,13 @@ article{
       .projects{
         display: grid;
         column-gap: 10px;
-        display: grid;
         grid-template-columns: auto auto;
       }
 
       #first-box {
         grid-column-start: 1;
-        grid-column-end: 3;
-        width: fit-content;
+        grid-column-end: 2;
+        /* width: fit-content; */
       }
 
       .skills-body{
@@ -719,7 +721,20 @@ article{
       .content-wrapper{
         display: flex;
         flex-direction: column;
+
       }
+
+      .dev-name{
+        width: 90%;
+        padding: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+        -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+        -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+      }
+
 
       .main{
         display: grid;
@@ -730,7 +745,10 @@ article{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        border: 1px solid #000;
+        border-radius: 10px;
       }
+
       .projects{
         display: grid;
         grid-template-columns: auto auto;
@@ -741,7 +759,7 @@ article{
       #first-box {
         grid-column-start: 1;
         grid-column-end: 3;
-        width: fit-content;
+
       }
 
       .to-home{
@@ -780,6 +798,8 @@ article{
         box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
         -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
         -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+        border: 1px solid #000;
+        border-radius: 10px;
     }
 
       .pub-set{
@@ -824,9 +844,20 @@ article{
       }
 
       .info-container{
-        padding: 3em;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        padding: 0 5em;
+
+      }
+
+      .bio-border{
+        margin-top: 3em;
+        margin-bottom: 3em;
         display: flex;
         justify-content: center;
+        border: 1px solid #000;
+        border-radius: 10px;
+
       }
 
       .me-stuff{
