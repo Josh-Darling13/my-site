@@ -330,11 +330,24 @@ article{
 }
 
 .pub-set{
-  background-color: #38ff42;
+  display: inline-block;
+  background-color: #38bdffa7;
   border: #121212 solid 1px;
   border-radius: 10px;
   color: #121212;
   padding: 1em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+  -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+  -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+}
+
+.pub-size{
+  display: flex;
+  flex-flow: column;
+   align-items: center;
+  justify-content: center;
 }
 
 .skills-body{
@@ -626,7 +639,6 @@ article{
       #first-box {
         grid-column-start: 1;
         grid-column-end: 2;
-        /* width: fit-content; */
       }
 
       .skills-body{
@@ -656,13 +668,23 @@ article{
       }
 
       .pub-set{
-        width: 90%;
-
+        background-color: #38bdffa7;
+        border: #121212 solid 1px;
+        border-radius: 10px;
+        color: #121212;
         padding: 1em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+        -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+        -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
       }
 
-      .pub-size{
-        width: 90%;
+     .pub-size{
+        display: flex;
+        flex-flow: column;
+         align-items: center;
+        justify-content: center;
       }
 
       #mid-skills{
@@ -809,7 +831,10 @@ article{
       }
 
       .pub-size{
-        width: 90%;
+        display: flex;
+        flex-flow: column;
+         align-items: center;
+        justify-content: center;
       }
 
       #skill-div{
@@ -857,7 +882,6 @@ article{
         justify-content: center;
         border: 1px solid #000;
         border-radius: 10px;
-
       }
 
       .me-stuff{
