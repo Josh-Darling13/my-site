@@ -778,11 +778,11 @@ article{
         opacity: 95%;
       }
 
-      #first-box {
+      /* #first-box {
         grid-column-start: 1;
         grid-column-end: 3;
 
-      }
+      } */
 
       .to-home{
         display: none;
