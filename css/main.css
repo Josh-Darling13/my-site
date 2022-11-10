@@ -111,7 +111,7 @@ header{
   justify-content: center;
   align-content: center;
   width: 100%;
-  opacity: 80%;
+  opacity: 95%;
 }
 
 h1{
@@ -222,7 +222,7 @@ li{
   border-radius: 10px;
   padding: 1em;
   text-align: center;
-  opacity: 77%;
+  opacity: 95%;
   text-decoration: none;
   box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
   -webkit-box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
@@ -258,7 +258,7 @@ article{
   margin-bottom: 1em;
   border-radius: 10px;
   padding: 10px;
-  opacity: 85%;
+  opacity: 95%;
   box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
   -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
   -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
@@ -313,7 +313,7 @@ article{
   border-radius: 10px;
   padding: 1em;
   text-align: center;
-  opacity: 77%;
+  opacity: 95%;
   text-decoration: none;
   box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
   -webkit-box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
@@ -353,7 +353,7 @@ article{
 .skills-body{
   background-color: whitesmoke;
   border-radius: 10px;
-  opacity: 90%;
+  opacity: 95%;
   padding: 1em;
   box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
   -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
@@ -369,7 +369,7 @@ article{
   font-family: Montserrat;
   font-size: 1.25rem;
   font-weight: bold;
-  opacity: 80%;
+  opacity: 95%;
   box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
   -webkit-box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
   -moz-box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
@@ -460,7 +460,7 @@ article{
   text-align: center;
   font-size: 1.25rem;
   font-weight: bold;
-  opacity: 80%;
+  opacity:95%;
   box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
   -webkit-box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
   -moz-box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
@@ -813,10 +813,10 @@ article{
 
       .skills-body{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
         gap: 10px;
         border-radius: 10px;
-        opacity: 90%;
+        opacity: 95%;
         box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
         -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
         -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
