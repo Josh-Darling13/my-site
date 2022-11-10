@@ -30,6 +30,8 @@ body {
 
 main {
   display: block;
+  margin: auto;
+  max-width: 1400px;
 }
 
 /**

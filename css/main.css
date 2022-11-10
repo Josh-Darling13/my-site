@@ -222,7 +222,7 @@ li{
   border-radius: 10px;
   padding: 1em;
   text-align: center;
-  opacity: 95%;
+  opacity: 75%;
   text-decoration: none;
   box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
   -webkit-box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
@@ -278,14 +278,19 @@ article{
 }
 
 .img-link{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
   border: #999 solid 1px;
-  border-radius: 10px;
   border-radius: 10px;
   box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84);
   -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84);
   -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84);
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: 95%;
+  /* height: 100%;
+  width: 100%; */
 }
 
 .article-body{
@@ -313,11 +318,10 @@ article{
   border-radius: 10px;
   padding: 1em;
   text-align: center;
-  opacity: 95%;
   text-decoration: none;
-  box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
-  -webkit-box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
-  -moz-box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
+  box-shadow: -1px 3px 10px 4px rgba(255,255,255,0.84) inset;
+  -webkit-box-shadow: -1px 3px 10px 4px rgba(255,255,255,0.84) inset;
+  -moz-box-shadow: -1px 3px 10px 4px rgba(255,255,255,0.84) inset;
 }
 
 .skill-set{
@@ -364,15 +368,14 @@ article{
   color: #FFF;
   background-color: #000;
   border-radius: 10px;
-  padding: 15px 0;
+  padding: 15px;
   text-align: center;
   font-family: Montserrat;
   font-size: 1.25rem;
   font-weight: bold;
-  opacity: 95%;
-  box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
-  -webkit-box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
-  -moz-box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
+  box-shadow: -1px 3px 10px 4px rgba(255,255,255,0.84) inset;
+  -webkit-box-shadow: -1px 3px 10px 4px rgba(255,255,255,0.84) inset;
+  -moz-box-shadow: -1px 3px 10px 4px rgba(255,255,255,0.84) inset;
 }
 
 .pub-skills p{
@@ -593,32 +596,10 @@ article{
    ========================================================================== */
 
 
-
-   /* @media only screen and (min-width:281px) { */
-    /*Thin phones here*/
-
-    /* .nav-list{
-      font-size: 12px;
-      font-weight: bold;
-    }
-
-    .icon-text{
-      font-size: 12px;
-      font-weight: bold;
-    }
-
-    .link-project{
-      font-size: 12px;
-      font-weight: bold;
-    }
-
-    .bio{
-      font-size: 1em;
-      font-weight: bold;
-    } */
-
    @media only screen and (min-width: 767px) and (orientation: portrait) {
     /*Tablet styles here */
+
+
 
       h2 p{
         font-size: 4em;
@@ -630,27 +611,40 @@ article{
         display: flex;
         flex-direction: column;
       }
-      .projects{
-        display: grid;
-        column-gap: 10px;
-        grid-template-columns: auto auto;
-      }
 
-      #first-box {
-        grid-column-start: 1;
-        grid-column-end: 2;
+      .projects{
+
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+
+        padding: 10px;
       }
 
       .skills-body{
         display: grid;
         grid-template-columns: auto auto;
+        grid-auto-columns: auto;
         gap: 10px;
         background-color: whitesmoke;
         border-radius: 10px;
         opacity: 90%;
+
         box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
         -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
         -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+      }
+
+
+
+      .skill-size{
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+        justify-content: center;
+
       }
 
 
@@ -757,10 +751,16 @@ article{
         -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
       }
 
-
-      .main{
-        display: grid;
+      main {
+        display: block;
+        margin: auto;
+        max-width: 1400px;
       }
+
+
+      /* .main{
+        display: grid;
+      } */
 
       article{
         padding: 1em;
@@ -773,9 +773,17 @@ article{
 
       .projects{
         display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+
+
+/*
+        display: grid;
         grid-template-columns: auto auto;
         gap: 10px;
-        opacity: 95%;
+        opacity: 95%; */
       }
 
       /* #first-box {
@@ -811,9 +819,18 @@ article{
         display: none;
       }
 
+      .skill-set{
+
+      }
+
+
       .skills-body{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
         gap: 10px;
         border-radius: 10px;
         opacity: 95%;
@@ -867,6 +884,7 @@ article{
       #about-header{
         width: 100%;
       }
+
 
       .info-container{
         padding-top: 3em;
