@@ -602,7 +602,7 @@ article{
    ========================================================================== */
 
 
-   @media only screen and (min-width: 767px) and (orientation: portrait) {
+   @media only screen and (min-width: 767px) {
     /*Tablet styles here */
 
 
@@ -821,7 +821,7 @@ article{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 80%;
+        /* width: 90%; */
         display: grid;
         grid-template-columns: auto auto;
         gap: 10px;
@@ -833,6 +833,27 @@ article{
         border: 1px solid #000;
         border-radius: 10px;
     }
+
+    .skill-size{
+
+
+      border-radius: 10px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px;
+      width: 60%;
+
+
+      box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+      -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+      -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+    }
+    .mad-skills{
+
+    }
+
+
 
       .pub-set{
         width: 90%;
