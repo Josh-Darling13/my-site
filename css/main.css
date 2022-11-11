@@ -217,18 +217,28 @@ li{
 .title-box{
   /* width: 150px;
   height: 100px; */
-  transform: skew(-10deg);
+/*
+  display: block;
+  margin-left: auto;
+  margin-right: auto; */
+
+  border-top: 50px;
+  border-bottom: 100px;
+  border-left: 25px;
+  border-right: 25px;
+  /* height: 50px;
+  width: 100px; */
 
 
 
   border: 1px solid #000;
-  width: fit-content;
+  /* width: fit-content; */
   color: #FFF;
   background-color: #000;
   border-radius: 10px;
   padding: 1em;
   text-align: center;
-  opacity: 75%;
+  /* opacity: 75%; */
   text-decoration: none;
   box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
   -webkit-box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
