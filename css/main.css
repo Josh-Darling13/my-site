@@ -278,6 +278,7 @@ article{
   box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
   -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
   -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+
 }
 
 .project-descript{
@@ -312,6 +313,7 @@ article{
 .article-body{
   display: flex;
   flex-direction: column-reverse;
+
 }
 
 .proj-divide{
@@ -626,6 +628,17 @@ article{
         padding: 1em;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .article-body{
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .to-home{
+        display: flex;
+        flex-direction: column
       }
 
       .projects{
@@ -644,7 +657,7 @@ article{
         gap: 10px;
         background-color: whitesmoke;
         border-radius: 10px;
-        opacity: 90%;
+        /* opacity: 90%; */
 
         box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
         -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
@@ -654,12 +667,13 @@ article{
 
 
       .skill-size{
+        /* padding: 0;
         display: flex;
 
         flex-direction: column;
 
         align-items: stretch;
-        justify-content: center;
+        justify-content: center; */
 
       }
 
@@ -845,25 +859,16 @@ article{
     }
 
     .skill-size{
-
-
       border-radius: 10px;
       display: block;
       margin-left: auto;
       margin-right: auto;
       padding: 20px;
       width: 60%;
-
-
       box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
       -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
       -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
     }
-    .mad-skills{
-
-    }
-
-
 
       .pub-set{
         width: 90%;
@@ -914,7 +919,6 @@ article{
         padding-top: 3em;
         padding-bottom: 3em;
         padding: 0 5em;
-
       }
 
       .bio-border{
