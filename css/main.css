@@ -129,6 +129,8 @@ h2 p{
 h3{
   text-decoration: none;
   font-weight: bolder;
+  font-family: 'Playfair Display', serif;
+
 }
 
 a{
@@ -220,31 +222,15 @@ main {
 }
 
 .title-box{
-  /* width: 150px;
-  height: 100px; */
-/*
- */
- display: block;
- margin-left: auto;
- margin-right: auto;
-
-  border-top: 50px;
-  border-bottom: 100px;
-  border-left: 25px;
-  border-right: 25px;
-  /* height: 50px;
-  width: 100px; */
-
-
-
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid #000;
-  /* width: fit-content; */
   color: #FFF;
   background-color: #000;
   border-radius: 10px;
   padding: 1em;
   text-align: center;
-  /* opacity: 75%; */
   text-decoration: none;
   box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
   -webkit-box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
@@ -293,9 +279,11 @@ article{
 .project-descript{
   padding: .5em;
   font-family: Montserrat;
-  color: #000;
-  font-size: 1.25rem;
   font-weight: bold;
+   color: #000;
+
+  font-size: 1.25rem;
+
 
 }
 
@@ -624,6 +612,19 @@ article{
    Modify as content requires.
    ========================================================================== */
 
+   /* ==========================================================================
+   ==========================================================================
+   ==========================================================================
+   ==========================================================================
+   ==========================================================================
+   ==========================================================================
+   ==========================================================================
+   ==========================================================================
+   ==========================================================================  */
+
+
+
+
 
    @media only screen and (min-width: 767px) {
     /*Tablet styles here */
@@ -644,7 +645,7 @@ article{
 
       .article-body{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
 
       }
 
@@ -653,14 +654,19 @@ article{
         flex-direction: column
       }
 
-      .projects{
+      .projects-top{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+      }
 
+      .projects-bottom{
         display: grid;
         grid-template-columns: auto auto auto;
         gap: 10px;
 
-
       }
+
 
       .skills-body{
         display: grid;
@@ -806,12 +812,12 @@ article{
         border-radius: 10px;
       }
 
-      .projects{
+      /* .projects{
         display: grid;
         grid-template-columns: auto auto auto;
         gap: 10px;
         padding: 10px;
-      }
+      } */
 
 
       .to-home{
