@@ -295,8 +295,6 @@ article{
   -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84);
   height: auto;
   width: 95%;
-  /* height: 100%;
-  width: 100%; */
 }
 
 .proj-divide{
@@ -610,8 +608,6 @@ article{
    @media only screen and (min-width: 767px) {
     /*Tablet styles here */
 
-
-
       h2 p{
         font-size: 4em;
         color: #000;
@@ -629,9 +625,6 @@ article{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-
-        /* justify-content: space-between; */
-
       }
 
       .proj-end{
@@ -647,19 +640,14 @@ article{
 
       .projects-top{
         display: grid;
-
-        /* grid-template-columns: auto auto; */
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
         gap: 10px;
       }
 
       .projects-bottom{
         display: grid;
-        /* grid-template-columns: auto auto auto; */
-        /* grid-template-columns: 1fr 1fr fr; */
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
         gap: 10px;
-
       }
 
 
@@ -676,7 +664,6 @@ article{
         -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
       }
 
-
       .skill-size{
         border-radius: 10px;
         display: block;
@@ -688,8 +675,6 @@ article{
         -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
         -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
       }
-
-
 
       .bio{
         display: inline-block;
@@ -770,7 +755,6 @@ article{
       h3{
         font-size: 2.5em;
         text-decoration: none;
-
       }
 
       .dev-name{
@@ -794,9 +778,6 @@ article{
         -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
         -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
       }
-
-
-
 
       article{
         padding: 1em;
@@ -837,7 +818,6 @@ article{
       .skill-set{
 
       }
-
 
       .skills-body{
         display: block;
@@ -911,7 +891,6 @@ article{
       #about-header{
         width: 100%;
       }
-
 
       .info-container{
         padding-top: 3em;
