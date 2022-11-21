@@ -231,9 +231,9 @@ main {
   padding: 1em;
   text-align: center;
   text-decoration: none;
-  box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
-  -webkit-box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
-  -moz-box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
+  box-shadow: -1px 3px 16px 4px rgba(255,255,255,0.84) inset;
+  -webkit-box-shadow: -1px 3px 16px 4px rgba(255,255,255,0.84) inset;
+  -moz-box-shadow: -1px 3px 16px 4px rgba(255,255,255,0.84) inset;
 }
 
 section{
@@ -358,9 +358,9 @@ article{
   border-radius: 10px;
   opacity: 95%;
   padding: 1em;
-  box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
-  -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
-  -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+  box-shadow: -1px 3px 16px 4px rgba(0,0,0,0.84) inset;
+  -webkit-box-shadow: -1px 3px 16px 4px rgba(0,0,0,0.84) inset;
+  -moz-box-shadow: -1px 3px 16px 4px rgba(0,0,0,0.84) inset;
 }
 
 .mad-skills p{
@@ -372,9 +372,9 @@ article{
   font-family: Montserrat;
   font-size: 1.25rem;
   font-weight: bold;
-  box-shadow: -1px 3px 10px 4px rgba(255,255,255,0.84) inset;
-  -webkit-box-shadow: -1px 3px 10px 4px rgba(255,255,255,0.84) inset;
-  -moz-box-shadow: -1px 3px 10px 4px rgba(255,255,255,0.84) inset;
+  box-shadow: -1px 3px 5px 4px rgba(255,255,255,0.84) inset;
+  -webkit-box-shadow: -1px 3px 5px 4px rgba(255,255,255,0.84) inset;
+  -moz-box-shadow: -1px 3px 5px 4px rgba(255,255,255,0.84) inset;
 }
 
 .pub-skills p{
@@ -463,9 +463,9 @@ article{
   font-size: 1.25rem;
   font-weight: bold;
   opacity:95%;
-  box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
-  -webkit-box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
-  -moz-box-shadow: -1px 3px 26px 4px rgba(255,255,255,0.84) inset;
+  box-shadow: -1px 3px 16px 4px rgba(255,255,255,0.84) inset;
+  -webkit-box-shadow: -1px 3px 16px 4px rgba(255,255,255,0.84) inset;
+  -moz-box-shadow: -1px 3px 16px 4px rgba(255,255,255,0.84) inset;
 }
 
 .social{
@@ -624,13 +624,17 @@ article{
       .article-body{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+
+        /* align-content: flex-start; */
+
+        /* justify-content: space-around; */
       }
 
       .proj-end{
+
         display: flex;
         flex-direction: column;
-        align-content: flex-end;
+        /* align-content: flex-end; */
       }
 
       .to-home{
@@ -659,9 +663,9 @@ article{
         padding:5%;
         background-color: whitesmoke;
         border-radius: 10px;
-        box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
-        -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
-        -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+        box-shadow: -1px 3px 16px 4px rgba(0,0,0,0.84) inset;
+        -webkit-box-shadow: -1px 3px 16px 4px rgba(0,0,0,0.84) inset;
+        -moz-box-shadow: -1px 3px 16px 4px rgba(0,0,0,0.84) inset;
       }
 
       .skill-size{
@@ -815,23 +819,18 @@ article{
         display: none;
       }
 
-      .skill-set{
-
-      }
-
       .skills-body{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        /* width: 90%; */
         display: grid;
         grid-template-columns: auto auto;
         gap: 10px;
         border-radius: 10px;
         opacity: 95%;
-        box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
-        -webkit-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
-        -moz-box-shadow: -1px 3px 26px 4px rgba(0,0,0,0.84) inset;
+        box-shadow: -1px 3px 16px 4px rgba(0,0,0,0.84) inset;
+        -webkit-box-shadow: -1px 3px 16px 4px rgba(0,0,0,0.84) inset;
+        -moz-box-shadow: -1px 3px 16px 4px rgba(0,0,0,0.84) inset;
         border: 1px solid #000;
         border-radius: 10px;
     }
